@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="src/style5.1.css" />
+		<title>Weather-wireframe</title>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/d5d0a031aa.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="weather-app">
+			<form id="form-search">
+				<div class="row">
+					<div class="col-2 search-city">
+						Search:
+					</div>
+
+					<div class="col-4 search-city">
+						<input type="text" class="form-control" id="city-output" />
+					</div>
+				</div>
+			</form>
+
+			<div class="row">
+				<div class="col">
+					<h1 class="text-center city" id="city2">Kyiv</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h2 class="text-center">
+						<i class="fa-solid fa-sun sunnyweather"></i>
+						<span class="sunny-degrees" id="temperature">20</span>
+						<span class="units"> 
+							<a href="#" id="celsius-link">°C</a> |
+							<a href=# id="farenheit-link">°F</a>
+						</span>
+					</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-5 offset-8">
+					<p class="m-0 date-day">Date: 24/05/2020, Friday</p>
+					<p class="m-0 time-actual">Time: 17:28</p>
+				</div>
+			</div>
+
+			<div class="row maxwidth">
+				<div class="col time-degree">
+					Now
+					<p class="m-0"><i class="fa-solid fa-sun sunnyweatherlittle"></i></p>
+					<p class="m-0">18°C</p>
+				</div>
+
+				<div class="col time-degree">
+					14:00
+					<p class="m-0"><i class="fa-solid fa-cloud clouds"></i></p>
+					<p class="m-0">20°C</p>
+				</div>
+
+				<div class="col time-degree">
+					17:00
+					<p class="m-0"><i class="fa-solid fa-cloud clouds"></i></p>
+					<p class="m-0">22°C</p>
+				</div>
+
+				<div class="col time-degree">
+					20:00
+					<p class="m-0"><i class="fa-solid fa-cloud clouds"></i></p>
+					<p class="m-0">20°C</p>
+				</div>
+
+				<div class="col time-degree">
+					23:00
+					<p class="m-0"><i class="fa-solid fa-moon youngmoon"></i></p>
+					<p class="m-0">16°C</p>
+				</div>
+
+				<div class="col time-degree">
+					02:00
+					<p class="m-0"><i class="fa-solid fa-moon youngmoon"></i></p>
+					<p class="m-0">12°C</p>
+				</div>
+
+				<div class="col time-degree">
+					05:00
+					<p class="m-0"><i class="fa-solid fa-cloud clouds"></i></p>
+					<p class="m-0">10°C</p>
+				</div>
+
+				<div class="col time-degree">
+					08:00
+					<p class="m-0"><i class="fa-solid fa-sun sunnyweatherlittle"></i></p>
+					<p class="m-0">15°C</p>
+				</div>
+
+				<div class="col time-degree">
+					11:00
+					<p class="m-0"><i class="fa-solid fa-sun sunnyweatherlittle"></i></p>
+					<p class="m-0">19°C</p>
+				</div>
+			</div>
+
+			<div class="row offset-1">
+				<div class="col text-left">
+					<p class="m-0 wind-today">Wind: 
+						<span id="wind-today">5 </span>
+							<span>km/h</span>
+					</p>
+					<p class="m-0 precipitation-today" id="precipitation-today">Precipitation: 0%</p>
+				</div>
+			</div>
+
+			<hr
+				align="center"
+				width="100%"
+				size="20"
+				color="rgba(31, 29, 29, 0.336)"
+			/>
+
+			<div class="row">
+				<div class="col text-center forecast-week">
+					<h3>Forecast 7 Days</h3>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4 forecast-7days">Today</div>
+				<div class="col-4 forecast-7days">10° - 22°</div>
+				<div class="col-4 forecast-7days">
+					<i class="fa-solid fa-cloud clouds"></i>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4 forecast-7days">Sat</div>
+				<div class="col-4 forecast-7days">7° - 22°</div>
+				<div class="col-4 forecast-7days"><i class="fa-solid fa-cloud clouds"></i></div>
+			</div>
+
+			<div class="row">
+				<div class="col-4 forecast-7days">Sun</div>
+				<div class="col-4 forecast-7days">10° - 23°</div>
+				<div class="col-4 forecast-7days"><li class="fa-solid fa-sun sunnyweatherlittle"></i>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4 forecast-7days">Mon</div>
+				<div class="col-4 forecast-7days">12° - 25°</div>
+				<div class="col-4 forecast-7days"><i class="fa-solid fa-sun sunnyweatherlittle"></i>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4 forecast-7days">Tue</div>
+				<div class="col-4 forecast-7days">10° - 22°</div>
+				<div class="col-4 te forecast-7days"><i class="fa-solid fa-cloud-rain cloud-rain"></i>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4 forecast-7days">Wed</div>
+				<div class="col-4 forecast-7days">10° - 22°</div>
+				<div class="col-4 forecast-7days"><i class="fa-solid fa-cloud-rain cloud-rain"></i>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4 forecast-7days">Thu</div>
+				<div class="col-4 forecast-7days">7° - 20°</div>
+				<div class="col-4 forecast-7days"><i class="fa-solid fa-cloud-rain cloud-rain"></i>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4 forecast-7days">Thu</div>
+				<div class="col-4 forecast-7days">9° - 22°</div>
+				<div class="col-4 forecast-7days-1"><i class="fa-solid fa-sun sunnyweatherlittle"></i>
+				</div>
+			</div>
+		</div>
+		</div>
+		<button class="current-weather-button" id="current-weather-button">Current geolocation weather</button>
+		<script src="src/index5.1.js"></script>
+
+	</body>
+</html>

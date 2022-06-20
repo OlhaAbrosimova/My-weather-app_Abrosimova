@@ -1,0 +1,109 @@
+.weather-app {
+	border: 1px solid black;
+	padding: 10px;
+	margin: 20px 10px 0px;
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+.maxwidth {
+	width: 100%;
+	text-align: center;
+}
+
+.search-city {
+	padding-top: 15px;
+	font-size: 25px;
+	text-align: center;
+	font-weight: 400;
+}
+.form-control {
+	margin: 0;
+	padding: 0px;
+}
+
+.city {
+	padding-top: 45px;
+	font-size: 35px;
+	font-weight: 450;
+}
+.sunnyweather {
+	color: #fce100;
+	font-size: 40px;
+	display: block;
+	margin: 0 auto;
+}
+.sunny-degrees {
+	font-size: 40px;
+}
+.units {
+	position: relative;
+	top: -14px;
+	font-size: 20px;
+}
+
+.date-day {
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+.time-actual {
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+.time-degree {
+	text-align: center;
+	font-size: 18px;
+	width: 11%;
+}
+
+.wind-today {
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+.precipitation-today {
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+.sunnyweatherlittle {
+	color: #fce100;
+}
+.clouds {
+	color: rgba(31, 29, 29, 0.336);
+}
+.cloud-rain {
+	color: rgba(31, 29, 29, 0.336);
+}
+.forecast-week {
+	padding-bottom: 20px;
+}
+.forecast-7days {
+	text-align: center;
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+.forecast-7days-1 {
+	text-align: center;
+	font-size: 25px;
+}
+.site {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+
+.current-weather-button {
+	background-color: #fce100;
+	font-size: 25px;
+	display: block;
+	margin: 0 auto;
+	font-weight: 450;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border-color: #fcb900ef;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
