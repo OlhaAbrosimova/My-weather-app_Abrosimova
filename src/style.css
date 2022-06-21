@@ -105,5 +105,9 @@
 	border-radius: 10px;
 	border-color: #fcb900ef;
 	margin-top: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 13px;
+}
+
+.open-code {
+	text-align: center;
 }
